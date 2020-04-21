@@ -1,0 +1,35 @@
+name: covid_kl
+description: A flutter app that shows the number of people affected by Covid19.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  http: ^0.12.0+4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.7.4
+
+flutter_icons:
+  image_path_ios: 'assets/images/icon.png'
+  image_path_android: 'assets/images/icon.png'
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: BalooBhaina2
+      fonts:
+        - asset: assets/fonts/BalooBhaina2-Regular.ttf
