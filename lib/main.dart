@@ -14,6 +14,7 @@ class RealWorldApp extends StatefulWidget {
 class RealWorldState extends State<RealWorldApp> {
   var _isLoading = false;
   var states;
+  var totalConfirmed;
 
   _fetchData() async {
     //print("geting data");
@@ -25,7 +26,7 @@ class RealWorldState extends State<RealWorldApp> {
       //print(response.body);
 
       final data = json.decode(response.body);
-      final districtJson = data[0]["districtData"];
+      final districtJson = data[15]["districtData"];
 
       setState(() {
         //print("api call ended");
@@ -47,7 +48,7 @@ class RealWorldState extends State<RealWorldApp> {
             'Covid19 In Kerala',
             style: TextStyle(fontSize: 25.0),
           ),
-          backgroundColor: Colors.teal.shade800,
+          backgroundColor: Colors.deepPurple.shade900,
           actions: <Widget>[
             new IconButton(
               icon: new Icon(Icons.refresh),
@@ -64,12 +65,15 @@ class RealWorldState extends State<RealWorldApp> {
         body: new Center(
           child: _isLoading
               ? new CircularProgressIndicator(
-                  valueColor: new AlwaysStoppedAnimation<Color>(Colors.green),
+                  valueColor:
+                      new AlwaysStoppedAnimation<Color>(Colors.pink.shade600),
                 )
               : new ListView.builder(
                   itemCount: this.states != null ? this.states.length : 0,
                   itemBuilder: (context, i) {
                     final state = this.states[i];
+                    //final totalConfirmed = state["confirmed"];
+
                     return new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
