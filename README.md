@@ -8,7 +8,7 @@ A Flutter app build for looking the stats on the number of people effected, newl
 
 ## Features to add.
 
-- [x] Stats from all the states from India.
+- [ ] Stats from all the states from India.
 - [ ] Stats of Countries.
 
 ## License.
