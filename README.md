@@ -8,8 +8,8 @@ A Flutter app build for looking the stats on the number of people effected, newl
 
 ## Features to add.
 
-- [ ] Stats from all the states from India.
-- [ ] Stats of Countries.
+- [ ] more total (active, recovered, dead, etc) from the state 
+- [ ] push notify if new case
 
 ## License.
 
